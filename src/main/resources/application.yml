@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: bff-mig
+
+mig :
+  domain : https://localhost:8080
+  mig-sasci:
+    url: ${mig.domain}/prefeitura
+    path:
+      get: /{id}
+  mig-saem :
+    url: ${mig.domain}/saem
+    path:
+      get: /{id}
+  mig-msc:
+    url: ${mig.domain}/safim
+    path:
+      get: /{id}
+  mig-mimg:
+    url: ${mig.domain}/sasci
+    path:
+      get: /{id}
+  mig-safim :
+    url: ${mig.domain}/stur
+    path:
+      get: /{id}
