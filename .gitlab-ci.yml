@@ -21,4 +21,4 @@ package:
     - mvn -DskipTests=true package
   artifacts:
     paths:
-      - bff/bff-mig/target/bff.jar
+      - target/*.jar
