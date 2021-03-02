@@ -4,7 +4,7 @@ stages:
   - build
   - test
   - package
-  - deploy
+  - production
 
 build:
   stage: build
