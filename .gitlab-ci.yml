@@ -26,11 +26,10 @@ package:
 
 
 production:
-  stage: deploy
+  type: deploy
+  stage: production
+  image: maven:latest
   script:
-    - echo "deply em andamento"
-  artifacts:
-    paths:
-      - target/*.jar
+    - dpl --provider=heroku --app=$HEROKU_APP_PRODUCTION --api-key=$HEROKU_API_KEY
   only:
-    - main
+    - master
