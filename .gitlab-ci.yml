@@ -4,6 +4,7 @@ stages:
   - build
   - test
   - package
+  - deploy
 
 build:
   stage: build
@@ -22,3 +23,11 @@ package:
   artifacts:
     paths:
       - target/*.jar
+
+
+production:
+  stage: deploy
+  script:
+    - echo "deply em andamento"
+  only:
+    - main
