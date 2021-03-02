@@ -26,7 +26,6 @@ package:
 
 
 production:
-  type: deploy
   stage: production
   image: maven:latest
   script:
