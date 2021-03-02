@@ -27,7 +27,7 @@ package:
 
 production:
   stage: production
-  image: maven:latest
+  image: zenika/kotlin
   script:
     - dpl --provider=heroku --app=$HEROKU_APP_PRODUCTION --api-key=$HEROKU_API_KEY
   only:
