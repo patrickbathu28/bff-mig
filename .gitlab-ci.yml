@@ -29,5 +29,8 @@ production:
   stage: deploy
   script:
     - echo "deply em andamento"
+  artifacts:
+    paths:
+      - target/*.jar
   only:
     - main
