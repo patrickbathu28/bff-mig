@@ -3,7 +3,7 @@ image: zenika/kotlin
 stages:
   - build
   - test
-  - production
+  - deploy
 
 build:
   stage: build
