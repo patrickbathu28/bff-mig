@@ -30,7 +30,6 @@ deploy_production:
   environment:
     name: production
     url: https://prefeitura-bff-bff-mig.herokuapp.com/
-  when: manual
   only:
     - main
 
