@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class ApplicationController {
 
-    @GetMapping
+    @GetMapping("/v1/application")
     fun read() : ResponseEntity<String> = ResponseEntity.ok("UP")
 
 }
