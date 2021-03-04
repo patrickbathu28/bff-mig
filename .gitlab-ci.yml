@@ -1,4 +1,4 @@
-image: store/oracle/jdk:11
+image: zenika/kotlin
 
 stages:
   - build
