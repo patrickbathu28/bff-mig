@@ -1,4 +1,4 @@
-image: zenika/kotlin
+image: maven:latest
 
 stages:
   - build

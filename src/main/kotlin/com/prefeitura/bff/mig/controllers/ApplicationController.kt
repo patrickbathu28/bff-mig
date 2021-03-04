@@ -1,4 +1,4 @@
-package com.prefeitura.controllers
+package com.prefeitura.bff.mig.controllers
 
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping

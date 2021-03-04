@@ -1,4 +1,4 @@
-package com.prefeitura
+package com.prefeitura.bff.mig
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

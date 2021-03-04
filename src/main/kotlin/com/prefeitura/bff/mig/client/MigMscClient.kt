@@ -1,4 +1,4 @@
-package com.prefeitura.client
+package com.prefeitura.bff.mig.client
 
 import org.springframework.cloud.openfeign.FeignClient
 import org.springframework.web.bind.annotation.GetMapping
