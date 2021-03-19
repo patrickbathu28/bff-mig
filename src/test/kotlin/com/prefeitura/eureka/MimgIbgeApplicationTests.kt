@@ -1,4 +1,4 @@
-package com.prefeitura.bff.mig
+package com.prefeitura.eureka
 
 import org.springframework.boot.test.context.SpringBootTest
 
