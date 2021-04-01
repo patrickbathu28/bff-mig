@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController
 class ApplicationController {
 
     @GetMapping("/v1/application",  produces= arrayOf(MediaType.APPLICATION_JSON_VALUE))
-    fun read() : ResponseEntity<String> = ResponseEntity.ok("UP")
+    fun applicationUp() : ResponseEntity<String> = ResponseEntity.ok("UP")
 
 }

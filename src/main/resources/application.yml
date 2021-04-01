@@ -9,32 +9,14 @@ spring:
     res:
       defaultMediaType: application/json
 
-mig :
-  domain : https://localhost:8080
-  mig-sasci:
-    url: ${mig.domain}/prefeitura
-    path:
-      get: /{id}
-  mig-saem :
-    url: ${mig.domain}/saem
-    path:
-      get: /{id}
-  mig-msc:
-    url: ${mig.domain}/safim
-    path:
-      get: /{id}
-  mig-mimg:
-    url: ${mig.domain}/sasci
-    path:
-      get: /{id}
-  mig-safim :
-    url: ${mig.domain}/stur
-    path:
-      get: /{id}
-
 server:
   port: 9090
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+swagger:
+  version: 1.0
+  description : APIs BFF

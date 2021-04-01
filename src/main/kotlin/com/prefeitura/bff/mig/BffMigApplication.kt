@@ -13,5 +13,4 @@ class Application
 
 fun main(args: Array<String>) {
 	runApplication<Application>(*args)
-	print("Sistema UP - OK")
 }

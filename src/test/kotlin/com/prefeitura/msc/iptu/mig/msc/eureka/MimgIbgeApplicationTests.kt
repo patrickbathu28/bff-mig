@@ -1,4 +1,4 @@
-package com.prefeitura.eureka
+package com.prefeitura.msc.iptu.mig.msc.eureka
 
 import org.springframework.boot.test.context.SpringBootTest
 
