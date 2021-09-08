@@ -8,10 +8,10 @@ import javax.ws.rs.PathParam
 @FeignClient("mig-sasci")
 interface MigSasciClient {
 
-    @GetMapping(path = arrayOf("/v1/cidadao/all"), consumes= arrayOf(MediaType.APPLICATION_JSON_VALUE))
+    @GetMapping(path = ["/v1/cidadao/all"], consumes= [MediaType.APPLICATION_JSON_VALUE])
     fun getCidadaoAll(): String?
 
-    @GetMapping(path = arrayOf("/v1/cidadao/{id}"), consumes= arrayOf(MediaType.APPLICATION_JSON_VALUE))
+    @GetMapping(path = ["/v1/cidadao/{id}"], consumes= [MediaType.APPLICATION_JSON_VALUE])
     fun getCidadaoById(@PathParam("id") id : String ): String?
 
 }

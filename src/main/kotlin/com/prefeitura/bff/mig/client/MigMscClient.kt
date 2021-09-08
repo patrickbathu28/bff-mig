@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.PathVariable
 @FeignClient("mig-msc")
 interface MigMscClient {
 
-    @GetMapping(path = arrayOf("/v1/iptu/{matricula}"))
+    @GetMapping(path = ["/v1/iptu/{matricula}"])
     fun getIptu(@PathVariable("matricula") matricula: String?): String?
 
-    @GetMapping(path = arrayOf("/v1/iptu/{matricula}"))
+    @GetMapping(path = ["/v1/iptu/{matricula}"])
     fun getItr(@PathVariable("matricula") matricula: String?): String?
 
 }
